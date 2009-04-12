@@ -7,6 +7,7 @@ Group:		X11/Libraries
 Source0:	http://ppa.launchpad.net/zootropo/ubuntu/pool/main/n/nautilus-play-mplayer/%{name}_%{version}-1.tar.gz
 # Source0-md5:	05a5d188382026c6c1bb809de885af50
 URL:		http://mundogeek.net/nautilus-scripts/
+Patch0:		%{name}-libdir.patch
 Requires:	nautilus-python >= 0.4.3
 Requires:	python-pygtk >= 2.12.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -18,6 +19,7 @@ contained inside the selected folders.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 %{__make}
