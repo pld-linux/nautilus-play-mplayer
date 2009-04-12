@@ -1,0 +1,11 @@
+diff -u nautilus-play-mplayer-0.1.1.orig/Makefile nautilus-play-mplayer-0.1.1/Makefile
+--- nautilus-play-mplayer-0.1.1.orig/Makefile	2009-04-12 13:27:04.000000000 +0000
++++ nautilus-play-mplayer-0.1.1/Makefile	2009-04-12 13:28:38.000000000 +0000
+@@ -1,6 +1,6 @@
+ # Name of the package
+ PACKAGE=nautilus-play-mplayer
+-EXTENSIONS_DIR=/usr/lib/nautilus/extensions-2.0/python/
++EXTENSIONS_DIR=${LIBDIR}/nautilus/extensions-2.0/python/
+ PIXMAPS_DIR=/usr/share/pixmaps/
+ 
+ all:
